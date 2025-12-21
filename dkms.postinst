@@ -1,0 +1,5 @@
+#!/bin/sh
+
+dtc -Wno-interrupts_property -Wno-unit_address_vs_reg -@ -I dts -O dtb -o gmax3412.dtbo gmax3412-overlay.dts
+
+install -m 751 gmax3412.dtbo /boot/overlays/
