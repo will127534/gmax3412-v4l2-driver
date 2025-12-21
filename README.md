@@ -12,7 +12,15 @@ Overall this is a extension from my gmax4002 basic minimum driver - just modifie
 ## Working platform
 The code is tested with RPI5 with either Analog discovery 2 or MCU as pulse generator, see the camera board repo [here](https://github.com/will127534/GlobalEye) for MCU code and camera board. The libcamera support has been added to my libcamera fork [here](https://github.com/will127534/libcamera).  
 
-TODO: ADD link to the Youtube and images here
+<img width="1280" alt="image" src="https://github.com/user-attachments/assets/53eb4a42-8ea5-4f12-b764-6d9b37767cd4" />
+<img width="1280" alt="image" src="https://github.com/user-attachments/assets/5b95bd54-53f1-42e3-ba69-38ca70e62af9" />
+
+See it in action here: [Youtube](https://www.youtube.com/watch?v=J_Mvx6Y6Drg).  
+The board is tested with Raspberry Pi 5.  
+
+The trigger signal looks like this:  
+<img width="1280" alt="image" src="https://github.com/user-attachments/assets/56f11915-6237-4873-89a1-e6653319db5b" />
+Yellow is the TEXP, and blue one is the TDIG output from the sensor showing "Frame Overhead Time".
 
 
 ## Prerequisites
