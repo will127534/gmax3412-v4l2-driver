@@ -64,7 +64,7 @@ static const s64 gmax3412_link_freq_menu[] = {
     GMAX3412_LINK_FREQ,
 };
 
-
+/* Technically the native width and height is 2080x1216 but the frame output is 2048Ux1218 */
 #define GMAX3412_NATIVE_WIDTH       4096U
 #define GMAX3412_NATIVE_HEIGHT      3072U
 #define GMAX3412_PIXEL_ARRAY_LEFT      0U
@@ -560,7 +560,7 @@ static const struct cci_reg_sequence mode_common_regs[] = {
 	{CCI_REG8(0x3704),0x00},
 	{CCI_REG8(0x3705),0x80},
 	{CCI_REG8(0x3706),0x00},
-	{CCI_REG8(0x3707),0x32},
+	{CCI_REG8(0x3707),0xC8},
 	{CCI_REG8(0x3708),0x00},
 	{CCI_REG8(0x3709),0xF9},
 	{CCI_REG8(0x370A),0x32},
@@ -580,7 +580,7 @@ static const struct cci_reg_sequence mode_common_regs[] = {
 	{CCI_REG8(0x3804),0x00},
 	{CCI_REG8(0x3805),0x80},
 	{CCI_REG8(0x3806),0x00},
-	{CCI_REG8(0x3807),0x32},
+	{CCI_REG8(0x3807),0xC8},
 	{CCI_REG8(0x3808),0x00},
 	{CCI_REG8(0x3809),0xF9},
 	{CCI_REG8(0x380A),0x32},
